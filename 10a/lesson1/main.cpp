@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+////////////////////////////////////////////////////////////////
+// Types
+// int, unsigned int, long, short, long long
+// float, double
+// char, string
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+// cin
+// cout
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+// Dynamic memory
+// malloc, calloc, realloc, free
+// new, delete
+////////////////////////////////////////////////////////////////
+
+char *Malloc(size_t size)
+{
+    char *arr = new char[size];
+
+    return arr;
+}
+
+char *Realloc(const char *const src, size_t size)
+{
+    char *arr = new char[size];
+    for (size_t i = 0; i < size; i++)
+    {
+        arr[i] = src[i];
+    }
+    delete[] src;
+    return arr;
+}
+
+int main()
+{
+    // char arr[10];
+    int a, b;
+    cin >> a >> b;
+
+    cout << "The number you chose is: " << a << endl;
+}
