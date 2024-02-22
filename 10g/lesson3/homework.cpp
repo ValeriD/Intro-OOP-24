@@ -101,12 +101,12 @@ int main()
     v.insert(2, 10);
     cout << "The expected value is 10, the actual value is: " << v.at(2) << endl;
     cout << "The expected capacity is 10, the actual capacity is: " << v.getCapacity() << endl;
-    cout << "The expected size is 6, the actual size is: " << v.getCapacity() << endl;
+    cout << "The expected size is 6, the actual size is: " << v.getSize() << endl;
 
     v.remove(2);
     cout << "The expected value is 3, the actual value is: " << v.at(2) << endl;
     cout << "The expected capacity is 10, the actual capacity is: " << v.getCapacity() << endl;
-    cout << "The expected size is 5, the actual size is: " << v.getCapacity() << endl;
+    cout << "The expected size is 5, the actual size is: " << v.getSize() << endl;
 
     return 0;
 }
