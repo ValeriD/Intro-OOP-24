@@ -16,9 +16,13 @@ using namespace std;
  *  - what() method that will print the message in the following format: MyCustomError: <message>
  */
 
-class MyException
+class MyException : exception
 {
 public:
+    MyException()
+        : exception()
+    {
+    }
     const char *what() const noexcept;
 };
 
